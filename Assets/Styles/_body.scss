@@ -1,0 +1,254 @@
+div[role=main] {
+    margin-top: 10rem;
+    width: 100vw;
+
+    p {
+        font-size: 1.7rem;
+        color: hsl(207, 13%, 34%);
+        letter-spacing: 1px;
+        word-spacing: -0.45px;
+        line-height: 1.85;
+    }
+
+    .level-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30vh;
+
+        h2 {
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .level-1-text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .level-1-mobile-main-img {
+            margin-bottom: 4rem;
+            width: 100%;
+        }
+
+        .level-1-texts {
+            width: 90%;
+            margin-bottom: 6rem;
+
+            h3 {
+                width: 80%;
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                width: 95%;
+            }
+        }
+    }
+
+    .level-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;    height: 95vh;
+        position: relative;
+        background-image: linear-gradient(to bottom, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+        border-radius: 0rem 8rem 0rem 8rem;
+        margin-bottom: 10vh;
+
+        .level-2-main-img {
+            z-index: 3;
+            width: 100%;
+            position: absolute;
+            top: -35%;
+        }
+
+        .overflow-controller {
+            position: absolute;
+            top: -2%;
+            z-index: 2;
+            width: 100%;
+            height: 33rem;
+            rotate: 180deg;
+            overflow: hidden;
+            .circles {
+                width: 140%;
+                filter: brightness(100%);
+            }
+        }
+
+        .level-2-texts {
+            z-index: 3;
+
+            h2 {
+                color: white;
+                margin: 5rem 0px 2.5rem;
+                font-size: 2.5rem;
+                width: 75%;
+            }
+
+            p {
+                color: white;
+                width: 75%;
+            }
+
+        }
+    }
+
+    .level-3 {
+        width: 100%;
+        overflow-x: hidden;
+
+        .level-3-texts {
+            padding: 0rem 3rem;
+            width: 100%;
+            
+            h3 {
+                margin-bottom: 2.5rem;
+                font-size: 2rem;
+            }
+
+            .free-open-simple {
+                margin-bottom: 4rem;
+            }
+        }
+
+        .level-3-mobile-main-img {
+            margin-bottom: 4rem;
+        }
+    }
+    
+
+}
+
+
+
+@media all and (min-width:376px) {
+
+    div[role=main] {
+
+        h2 {
+            font-size: 3.75rem !important;
+        }
+        
+        h3 {
+            font-size: 2.8rem !important;
+        }
+        
+        .level-1 {
+                width: 100%;
+                margin-bottom: 50vh;
+
+            .level-1-text-container {
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 100%;
+                position: relative;
+                padding: 0rem 0rem 0rem 18rem;
+                overflow-block: hidden;
+
+                :nth-child(3) {
+                    margin-top: 11rem;
+                }
+
+            }
+
+
+            .level-1-texts {
+                width: 40%;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-top: 5rem;
+
+                p {
+                    width: 100%;
+                }
+            }
+
+
+
+            .level-1-desktop-main-img {
+                position: absolute;
+                right: -15.5%;
+                top: -20%;
+                width: 60%;
+            }
+       }
+
+       .level-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 5%;
+            height: 70vh;
+            margin-bottom: 15vh;
+
+
+            .level-2-main-img{
+                grid-column: 1 / 2;
+                width: 90%;
+                top: -20%;
+            }
+
+            .overflow-controller {
+                grid-column: 1 / 2;
+                // overflow: visible;
+                width: 125%;
+                height: 50rem;
+                top: 0%;
+                .circles {
+                    width: 100%;
+                    position: absolute;
+                    top: -8%;
+                }
+            }
+
+            .level-2-texts {
+                grid-column: 2 / 3;
+                align-items: flex-start !important;
+                justify-content: flex-start !important;
+                
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    width:70%;
+                }
+                
+            }
+        }
+
+        .level-3 {
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: row;
+            position: relative;
+            margin-bottom: 5vh;
+            height: 115vh;
+
+            .level-3-texts {
+                width: 50%;
+
+                p {
+                    width: 65%;
+                }
+
+            }
+
+            .level-3-desktop-main-img {
+                position: absolute;
+                left: -16%;
+                width: 65%;
+                
+            }
+        }
+
+    }
+
+}

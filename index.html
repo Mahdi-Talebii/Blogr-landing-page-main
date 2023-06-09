@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Frontend Mentor | [Blogr]</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Assets/Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="centralize-column">
+    <div role="menu">
+      <!-- <img
+        src="Assets/Files/bg-pattern-intro-desktop.svg"
+        alt=""
+        class="background-img desktop-content"
+      />
+      <img
+        src="Assets/Files/bg-pattern-intro-mobile.svg"
+        alt=""
+        class="background-img mobile-content"
+      /> -->
+      <div class="menu">
+        <!-- this is just a div for containing the ul and the logo because of the flex-box  -->
+        <div class="menu-left-side centralize">
+          <a href="#"><img src="Assets/Files/logo.svg" alt=""  class="menu-logo-img"/></a>
+          <ul class="menu-outer-ul desktop-content">
+            <li>
+              Product
+              <img
+                src="Assets/Files/icon-arrow-light.svg"
+                alt=""
+                class="arrow"
+              />
+              <ul class="menu-inner-uls">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+
+            <li>
+              Company
+              <img
+                src="Assets/Files/icon-arrow-light.svg"
+                alt=""
+                class="arrow"
+              />
+
+              <ul class="menu-inner-uls">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+
+            <li>
+              Connect
+              <img
+                src="Assets/Files/icon-arrow-light.svg"
+                alt=""
+                class="arrow"
+              />
+
+              <ul class="menu-inner-uls">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- this is just a div for containing the ul and the logo because of the flex-box  -->
+        <div class="menu-right-side centralize">
+          <a href="#" class="colourless-buttons desktop-content">Login</a>
+          <a href="#" class="white-buttons desktop-content">Sign&nbsp;Up</a>
+          <img
+            src="Assets/Files/icon-hamburger.svg"
+            alt=""
+            class="mobile-content"
+          />
+        </div>
+      </div>
+
+      <div class="header-texts centralize-column">
+        <h2>A modern publishing platform</h2>
+        <p>Grow your audience and build your online brand</p>
+        <div class="header-texts-buttons centralize">
+          <a href="#" class="white-buttons"> Start for Free </a>
+          <a href="#" class="colourless-buttons"> Learn More </a>
+        </div>
+      </div>
+    </div>
+    
+    <div role="main" class="centralize-column">
+      <section class="level-1">
+        <h2>Designed for the future</h2>
+        <div class="level-1-text-container">
+          <img
+            src="Assets/Files/illustration-editor-desktop.svg"
+            alt=""
+            class="desktop-content level-1-desktop-main-img"
+          />
+          <img
+            src="Assets/Files/illustration-editor-mobile.svg"
+            alt=""
+            class="mobile-content level-1-mobile-main-img"
+          />
+
+          <div class="level-1-texts centralize-column">
+            <h3>Introducing an extensible editor</h3>
+            <p class="default-p">
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+
+          <div class="level-1-texts centralize-column">
+            <h3>Robust content management</h3>
+            <p class="default-p">
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="level-2">
+        <img
+          src="Assets/Files/illustration-phones.svg"
+          alt=""
+          class="level-2-main-img"
+        />
+        <div class="overflow-controller centralize-column">
+          <img
+            src="Assets/Files/bg-pattern-circles.svg"
+            alt=""
+            class="circles"
+          />
+        </div>
+        <div class="level-2-texts centralize-column">
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </section>
+      
+      <section class="level-3 centralize-column">
+        <img
+          src="Assets/Files/illustration-laptop-desktop.svg"
+          alt=""
+          class="desktop-content level-3-desktop-main-img"
+        />
+        <img
+          src="Assets/Files/illustration-laptop-mobile.svg"
+          alt=""
+          class="mobile-content level-3-mobile-main-img"
+        />
+        <div class="level-3-texts centralize-column">
+          <div class="free-open-simple">
+            <h3>Free, open, simple</h3>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+
+          <div class="powerful-tooling">
+            <h3>Powerful tooling</h3>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div role="footer" class="centralize-column">
+      <a href="#" class="footer-logo">
+        <img src="Assets/Files/logo.svg" alt="" class="footer-logo-img" />
+      </a>
+
+      <div class="footer-links centralize-column">
+        <h4>Product</h4>
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+
+      <div class="footer-links centralize-column">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+
+      <div class="footer-links centralize-column">
+        <h4>Connect</h4>
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+// General styles
+
+// font-family: 'Overpass', sans-serif;
+// font-family: 'Ubuntu', sans-serif;
+
+:root {
+    font-size: 62.5% !important;
+}
+
+* {
+    font-size: 1.7rem;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: hsl(208, 49%, 24%);
+}
+
+.background-img {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+
+.colourless-buttons {
+    color: white;
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+}
+
+.white-buttons {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    border-radius: 3rem;
+    padding: 1.7rem 5rem;
+}
+
+.white-buttons:hover {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+    transition: all ease-in-out 0.4s;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+.mobile-content {
+    display: inline-block;
+}
+
+.desktop-content {
+    display: none;
+}
+
+.default-p {
+    font-size: 1.6rem;
+    color:  hsl(207, 13%, 34%);
+}
+
+
+
+@media all and (min-width:376px) {
+
+    .mobile-content {
+        display: none !important;
+    }
+    
+    .desktop-content {
+        display: inline-block !important;
+    }
+
+    a, h2 {
+        text-align: center;
+    }
+
+    p, h3 {
+        text-align: left;
+    }
+}
+
+@import 'header';
+@import 'body';
+@import 'footer';
